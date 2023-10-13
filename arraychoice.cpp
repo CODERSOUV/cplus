@@ -1,19 +1,22 @@
 #include<iostream>
 using namespace std;
 
-void insert_any(int a[],int n,int pos,int data) {
+void insert_any(int a[],int &n,int pos,int data) {
     for (int i = n; i >= pos; i--)
         a[i] = a[i - 1];
     a[pos - 1] = data;
+    n++;
 }
 
-void insert_first(int a[],int n,int data) {
+void insert_first(int a[],int &n,int data) {
     for (int i = n; i >= 1; i--)
         a[i] = a[i - 1];
     a[0] = data;
+    n++;
 }
-void insert_last(int a[],int n,int data) {
+void insert_last(int a[],int &n,int data) {
     a[n] = data;
+    n++;
 }
 void delete_array(int a[],int &n,int pos){
    for (int i = pos-1;i < n-1;i++) {
@@ -37,7 +40,7 @@ int main() {
     for (int i = 0; i < n; i++)
         cin >> a[i];
 
-
+        
     while (true) {
          cout << "Press 1 to insert in any position\nPress 2 to insert in the first position\nPress 3 to insert in the last position\nPress 4 to delete\nPress 5 to display\nPress 6 to exit\n";
         cin >> ch;

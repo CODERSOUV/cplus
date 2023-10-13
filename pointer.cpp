@@ -6,7 +6,7 @@ int main(){
     // b=&a;
     // cout<<"The address of b "<<b<<endl;
     // cout<<"The value of a= "<<*b<<endl;
-    int i, j = 25;
+    int i, j = 26;
 
     int *pi, *pj = &j;
     *pj = j + 5;

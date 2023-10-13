@@ -10,7 +10,7 @@ cout<<"Enter the size of the array"<<endl;
 cin>>n;
 int arr[n];
 for(int i=0;i<n;i++)
-cin>>arr[i];
+    cin>>arr[i];
 cout<<"Enter your choice\nPress 1 to delete";
 cin>>ch;
 switch(ch){
