@@ -1,6 +1,5 @@
 #include<iostream>
 using namespace std;
-
 void insert_any(int a[],int &n,int pos,int data) {
     for (int i = n; i >= pos; i--)
         a[i] = a[i - 1];
